@@ -1,0 +1,12 @@
+{
+	"endpoints": [
+		{
+			"method": "get",
+			"path": "/test/endpoint/24",
+			"statusCode": 200,
+			"tests": {
+				"field": "value"
+			}
+		}
+	]	
+}

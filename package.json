@@ -1,0 +1,31 @@
+{
+	"name": "es4x-tpl-service",
+	"displayName": "ES4X Service TEMPLATE",
+	"version": "0.1.0",
+	"description": "Template to create a service within our framework to create microservices within GCP and ES4X Runtime.",
+	"main": "index.js",
+	"keywords": ["es4x", "javascript", "vertex", "microservice", "gcp"],
+	"author": {
+		"name": "Michael Jegat (Omnislash)",
+		"email": "michael@omnislash.com",
+		"url": "https://omnislash.com"
+	},
+	"dependencies": {
+		"@vertx/core": "4.1.0",
+		"@vertx/pg-client": "4.2.5",
+		"es4x-utils": "git+https://github.com/omnislash-com/es4x-utils.git#main",
+		"project-core": "git+https://github.com/omnislash-com/es4x-tpl-project-core.git#main"
+	},
+	"devDependencies": {
+		"@es4x/create": "0.14.0",
+		"@vertx/unit": "4.1.0"
+	},
+	"mvnDependencies": [
+		"com.fasterxml.jackson.core:jackson-databind:2.9.10.3"
+	],
+	"scripts": {
+		"postinstall": "es4x install",
+		"start": "es4x",
+		"test:Server": "es4x test tests/Server.test.js"
+	}
+}
