@@ -9,7 +9,7 @@ let	modelFolder = process.cwd() + "/src/model/";
 
 // create the service
 let	service = new MainService();
-let	appContext = new CoreContext(vertx, "local", false);
+let	appContext = new CoreContext(vertx, process.env.NODE_ENV, false);
 
 // init it
 MainService.StartServer(vertx, service, appContext, configFolder, modelFolder);
